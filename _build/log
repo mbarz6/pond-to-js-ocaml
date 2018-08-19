@@ -1,0 +1,8 @@
+# jbuilder build
+# OCAMLPARAM: unset
+$ /usr/bin/nproc > /tmp/dune14a923.output
+$ /usr/local/bin/ocamlc.opt -config > /tmp/dune42ed36.output
+$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl bin/main.ml) > _build/default/bin/.main.eobjs/main.ml.d
+$ (cd _build/default && /usr/local/bin/ocamlc.opt -w -40 -g -bin-annot -I bin/.main.eobjs -I lib/.lib.objs -no-alias-deps -o bin/.main.eobjs/main.cmo -c -impl bin/main.ml)
+$ (cd _build/default && /usr/local/bin/ocamlopt.opt -w -40 -g -I bin/.main.eobjs -I lib/.lib.objs -intf-suffix .ml -no-alias-deps -o bin/.main.eobjs/main.cmx -c -impl bin/main.ml)
+$ (cd _build/default && /usr/local/bin/ocamlopt.opt -w -40 -g -o bin/main.exe -I lib lib/lib.cmxa bin/.main.eobjs/main.cmx)

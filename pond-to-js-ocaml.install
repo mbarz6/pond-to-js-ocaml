@@ -1,0 +1,7 @@
+lib: [
+  "_build/install/default/lib/pond-to-js-ocaml/META" {"META"}
+  "_build/install/default/lib/pond-to-js-ocaml/opam" {"opam"}
+]
+bin: [
+  "_build/install/default/bin/pond-to-js-ocaml" {"pond-to-js-ocaml"}
+]
